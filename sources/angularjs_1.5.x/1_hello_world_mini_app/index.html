@@ -1,15 +1,29 @@
 <html>
 <head>
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
-    </head>
-    <body ng-app='myapp'>
-    <div ng-controller='helloController'>
-    <div>
-    Name: <input ng-model='name'>
+</head>
+<body ng-app='myapp'>
+
+<div class="page" div ng-controller="HelloController" class="container-fluid">
+<form>
+
+<div  class="form-group">
+        <label for="input1" >Name: </label>
+            <input ng-model='name' for="input1">
+
+        <label >Hello {{name}}</label> <!-- 2 ways binding-->
+
     </div>
-    <h2>Hello {{name}}</h2> <!-- 2 ways binding-->
+    </form>
+
+    </div>
+
 </div>
+
 </body>
 <script>
     //Define minapp module
@@ -18,7 +32,7 @@ angular.module('myapp', []);
 //Define hello controller
 angular
     .module('myapp')
-    .controller('helloController', ['$scope', function($scope) {
+    .controller('HelloController', ['$scope', function($scope) {
         $scope.name = 'flora';
     }]);
 </script>
