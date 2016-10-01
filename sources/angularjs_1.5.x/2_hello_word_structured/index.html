@@ -1,0 +1,16 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+    <script src="hello.module.js"></script>
+    <script src="hello.controller.js"></script>
+</head>
+<body ng-app='myapp'>
+<div ng-controller='HelloController'>
+    <div>
+        Name: <input ng-model='name'>
+    </div>
+    <h2>Hello {{name}}</h2> <!-- 2 way binding-->
+</div>
+</body>
+</html>
