@@ -8,7 +8,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state({
             abstract: true,
             name: 'main',
-            templateUrl: 'sources/ui.main.template.html',
+            templateUrl: 'sources/main.template.html',
             controller: 'MainController'
         });
 
