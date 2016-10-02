@@ -1,3 +1,9 @@
-Handle dependancy automatically :
+# Basic AngularJS 1.5.x
 
-npm init
+
+## Handle dependancy automatically :
+
+npm init // will create a json file to handly dependancy automatically
+
+angular-translate
+angular-ui-router

@@ -7,8 +7,9 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
-    <script src="hello.module.js"></script>
-    <script src="hello.controller.js"></script>
+    <script src="../../../node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script src="main.module.js"></script>
 
 
     <head>
@@ -17,15 +18,13 @@
 
 <body ng-app='myapp'>
 
-<div class="page" div ng-controller="HelloController" class="container-fluid">
-    <a ui-sref="myapp.about" ui-sref-active="active">Home</a>
-    <a ui-sref="myapp.about" ui-sref-active="active">About</a>
-    <a ui-sref="myapp.about" ui-sref-active="active">Contact</a>
+<div class="page" class="container-fluid">
+
+    <h1>Contact    </h1>
+
+
 
 </div>
-
-    <div class="page" class="container-fluid">
-        <ui-view></ui-view>
 
 </div>
 
