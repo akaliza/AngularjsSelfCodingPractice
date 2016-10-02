@@ -8,7 +8,7 @@ angular
             .state({
                 name: 'home',
                 url: '/home',
-                templateUrl: 'sources/angularjs_1.5.x/4_ui_router/main.template.html'
+                templateUrl: 'sources/angularjs_1.5.x/4_ui_router/ui.main.template.html'
             })
             .state({
                 name: 'about',
