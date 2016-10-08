@@ -1,4 +1,4 @@
-angular.module('version1', [])
+angular.module('version1')
     .controller('Version1Controller', Version1Controller);
 
 Version1Controller.$inject = ['$scope'];

@@ -1,15 +1,19 @@
 angular.module('main')
     .controller('MainController', MainController);
 
-MainController.$inject = ['$scope'];
+MainController.$inject = ['$scope', '$stateParams', '$translate'];
 
-function MainController($scope) {
+function MainController(
+    $scope,
+    $stateParams,
+    $translate) {
 
 
+    console.log('MainController....');
 
-console.log('MainController initialized....');
-
-
+    if ($stateParams.language) {
+        $translate.use($stateParams.language);
+    }
 
 
 }
